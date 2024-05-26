@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utils/bootstrap/css/bootstrap.min.css" />
+
+    <!-- Bootstrap JavaScript -->
+    <script src="utils/bootstrap/js/jquery-3.7.1.js"></script>
+    <script src="utils/bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/icon.png" class="icon" alt="icon" />
+            <h6 class="title">Ethiguard<br /> Dark Pattern Identifier</h6>
+        </div>
+
+        <div class="switch__cont">
+            <div class="container">
+                <label class="switch">
+                    <input type="checkbox" id="switch__status" />
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="main__section">
+        <div class="main__header">
+            <div class="list__cmds">
+                <a href="" id="list__dec"> < </a>
+                <div class="list__index"># out of #</div>
+                <a href="" id="list__inc"> > </a>
+            </div>
+            <p id="DP_Type">Deceptive Content Luring</p>
+            <div class="CUR__WSContainer center">
+                <hr class="solid" />
+                <p id="CUR__Website" class="center">https://example.com/</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p class="footer__text center">
+            Ethiguard is a Dark Pattern Identifying extension developed by TEAM TOP G for DBPH 2023. 
+            Special thanks are extended to all the team members who contributed to its creation.
+        </p>
+        
+        <a href="https://form.jotform.com/240365242506450" target="_blank">
+            <button id="feedback__button" class="center">Give Feedback</button>
+        </a>
+        
+    </div>
+
+    <script src="popup.js"></script>
+    
+        
+    
+</body>
+</html>

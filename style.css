@@ -1,0 +1,212 @@
+:root {
+    --background: #000000; /* Aesthetic black background */
+    --div_bg: #111111; /* Dark gray for main section background */
+    --gold: #ffffff; /* White for gold elements */
+    --span: #47a3da; /* Cyberpunk blue */
+    --text: #ffffff; /* White text */
+    --text__footer: #7f7f7f; /* Gray footer text */
+    --switch-off: #ff6464; /* Cyberpunk red for switch off state */
+    --switch-on: #4cd964; /* Cyberpunk green for switch on state */
+    --font-main: 'Roboto', sans-serif; /* Main font */
+    --font-title: 'Futura', sans-serif; /* Futuristic font */
+}
+
+body {
+    width: 350px;
+    height: 330px;
+    background-color: var(--background) !important;
+    padding: 15px;
+    font-family: var(--font-main);
+    color: var(--text);
+}
+
+/* HEADER SECTION */
+.header {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%; /* Adjust the percentage to control the roundness */
+    box-shadow: 0 0 10px var(--gold); /* Add a gold-colored glow effect */
+    transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+.icon:hover {
+    box-shadow: 0 0 20px var(--gold); /* Increase the glow on hover */
+}
+
+.title {
+    color: var(--gold);
+    margin-left: 7px;
+    font-size: 18px;
+    font-family: var(--font-title); /* Futuristic font */
+    font-weight: bold; /* Make the font bolder */
+}
+
+.switch__cont {
+    display: flex;
+    align-items: center;
+}
+
+/* MAIN SECTION */
+.main__section {
+    height: 49%;
+    border: 2px solid var(--gold);
+    margin-top: 5px;
+    background-color: var(--div_bg);
+    border-radius: 6px;
+    box-shadow: 3px 2px 5px var(--div_bg);
+    padding: 2px;
+}
+
+.list__cmds {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    color: var(--text);
+}
+
+.list__index {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+#list__inc,
+#list__dec {
+    margin: 10px;
+    text-decoration: none;
+    color: var(--gold);
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#DP_Type {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+#CUR__Website {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: large;
+    color: var(--gold);
+}
+
+/* FOOTER SECTION */
+.footer {
+    height: 20%;
+    margin-top: 1.4em;
+}
+
+.footer__text {
+    font-size: 10px;
+    color: var(--text__footer);
+}
+
+/* UTILS */
+.center {
+    text-align: center;
+}
+
+hr.solid {
+    border-top: 2px solid var(--span);
+    width: 80%;
+    height: 2px;
+    margin-left: 10%;
+    margin-bottom: 0.2em;
+}
+
+/* SWITCH */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; /* Gray background */
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + .slider {
+    background-color: #2196F3; /* Blue background when checked */
+}
+
+input[type="checkbox"]:focus + .slider {
+    box-shadow: 0 0 1px #2196F3; /* Blue shadow when focused */
+}
+
+input[type="checkbox"]:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+/* Feedback Button */
+#feedback__button {
+    background-color: var(--span); /* Changed background color to blue */
+    color: var(--gold); /* Changed text color to gold */
+    border: none;
+    padding: 5px 10px; /* Adjusted padding */
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Changed to block for center alignment */
+    width: fit-content; /* Adjusted width */
+    font-size: 12px; /* Reduced font size */
+    margin: 0 auto; /* Center alignment */
+    cursor: pointer;
+    border-radius: 3px; /* Reduced border radius */
+}
+
+#feedback__button:hover {
+    background-color: var(--switch-on); /* Changed background color to blue */
+    color: var(--gold); /* Changed text color to gold */
+}
+
+#feedback__button:focus {
+    outline: none; /* Remove focus outline */
+}
