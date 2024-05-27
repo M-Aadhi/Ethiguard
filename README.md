@@ -27,7 +27,7 @@ Ethiguard is an innovative browser extension designed to enhance online privacy 
 ## Installation
 1. Clone this repository or download the ZIP file.
    ```bash
-   git clone https://github.com/yourusername/ethiguard.git
+   git clone https://github.com/M-Aadhi/ethiguard.git
 
 2. **Open your browser and navigate to the extensions page:**
    - For Chrome: [chrome://extensions/](chrome://extensions/)
